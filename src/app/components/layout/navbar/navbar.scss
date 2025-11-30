@@ -1,0 +1,65 @@
+.navbar {
+  height: 60px;
+  background: #1976d2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  .app-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .search-input {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 250px;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .nav-btn {
+      background: transparent;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .profile-menu {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .avatar {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+      }
+
+      .username {
+        font-weight: 500;
+      }
+    }
+
+    .logout-btn {
+      background: #e53935;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        background: #c62828;
+      }
+    }
+  }
+}

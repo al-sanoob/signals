@@ -1,3 +1,13 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { Dashboard } from './components/pages/dashboard/dashboard';
+import { Home } from './components/pages/home/home';
+import { Settings } from './components/pages/settings/settings';
+import { NgModule } from '@angular/core';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: Home },
+  { path: 'dashboard', component: Dashboard },
+  { path: 'settings', component: Settings },
+  { path: '**', redirectTo: 'home' }
+];
